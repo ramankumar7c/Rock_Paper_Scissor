@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Swords } from "lucide-react";
+import { ArrowRight, Swords, Heart, Github } from "lucide-react";
 
 export default function Home() {
   return (
@@ -36,6 +36,21 @@ export default function Home() {
 
         <div className="mt-8 text-sm text-muted-foreground">
           <p>Create a game and invite a friend using the game ID.</p>
+        </div>
+
+        <div className="mt-12 text-sm text-muted-foreground flex items-center justify-center gap-1">
+          <p>Developed with</p>
+          <Heart className="h-4 w-4 text-red-500 animate-pulse" />
+          <p>by</p>
+          <Link 
+            href="https://github.com/ramankumar7c" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-500 hover:text-blue-600 hover:underline transition-colors flex items-center gap-1"
+          >
+            Raman
+            <Github className="h-4 w-4" />
+          </Link>
         </div>
       </div>
     </main>
