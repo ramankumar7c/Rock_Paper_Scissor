@@ -60,9 +60,9 @@ export default function GameHeader({
         </div>
         
         <div className="flex items-center">
-          <Badge className="mr-2">{game.scores.player1}</Badge>
+          <Badge className="mr-2">{game.scores[playerRole]}</Badge>
           <span className="text-muted-foreground">vs</span>
-          <Badge className="ml-2">{game.scores.player2}</Badge>
+          <Badge className="ml-2">{game.scores[opponentRole]}</Badge>
         </div>
         
         <div className="text-center">
